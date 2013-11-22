@@ -6,16 +6,26 @@
  *  This is my homemade cookie library written for Project 4
  */
 
-function setCookie(name, value) {
-    document.cookie = escape(name)+'='+escape(value)+".";
+function setCookie(argumentName, argumentValue) {
+    
+    document.cookie = argumentName+'='+escape(argumentValue)+", ";
     alert("document.cookie: "+document.cookie);
 }
 
-function getCookie(name) {
-    var cookieFlag = name+"=";
-    var nameIndex = document.cookie.indexOf(cookieFlag);
-    var endCookie = document.cookie.indexOf(".", nameIndex);
-    return document.cookie.substring(nameIndex,endCookie);
+function get_argumentValue(argumentName) {
+    
+    var cookieString = document.cookie;
+    var exists = cookieString.indexOf(" "+argumentName+"=");
+    if (exists == -1)
+        exists = cookieString.indexOf(argumentName+"=");
+    if (exists == -1)
+        return null;
+    else {
+        var argumentStart = cookieString.indexOf("=", exists)+1;
+        var argumentEnd = cookieString.indexOf(";", exists);
+        if (argumentEnd == -1) {argumentEnd = cookieString.length}
+        return unescape(cookieString.substring(argumentStart,argumentEnd));
+    }
 }
 
 /*

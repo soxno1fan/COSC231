@@ -54,6 +54,15 @@ function drawBoard() {
     hanSolo.height = "47";
     hanSolo.width = "47";
     hanSolo.alt = "sprite";
+    
+    /*Retrieves previous highscore*/
+    var high = getCookie("Highscore");
+    if (high) {
+        document.getElementById("highscore").innerHTML = high;
+    }
+    else {
+        document.getElementById("highscore").innerHTML = "0000";
+    }
 }
 
 /*
@@ -265,14 +274,38 @@ function endGame(message) {
         hanSolo.src = "Dead.png";
     }
     alert(message);
+    
+    var previousBest = parseInt(getCookie("Highscore"));
+    if (score > previousBest || previousBest != true) {
+        document.getElementById("highscore").innerHTML = score;
+        alert("New Highscore!");
+        setCookie("Highscore", score);
+    }
+        
+    
 }
 
 
+function setCookie(argumentName, argumentValue) {
+    
+    document.cookie = argumentName+'='+escape(argumentValue);
+}
 
-
-
-
-
+function getCookie(argumentName) {
+    
+    var cookieString = document.cookie;
+    var exists = cookieString.indexOf(" "+argumentName+"=");
+    if (exists == -1)
+        exists = cookieString.indexOf(argumentName+"=");
+    if (exists == -1)
+        return null;
+    else {
+        var argumentStart = cookieString.indexOf("=", exists)+1;
+        var argumentEnd = cookieString.indexOf(";", exists);
+        if (argumentEnd == -1) {argumentEnd = cookieString.length}
+        return unescape(cookieString.substring(argumentStart,argumentEnd));
+    }
+}
 
 
 
