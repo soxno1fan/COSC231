@@ -1,0 +1,25 @@
+<!--
+ Mordechai Sadowsky
+ COSC 231-0 S. Haynes
+ Due: 15-Nov-2013
+ Project 4: Create game with keyboard control of a sprite who must dodge
+    meteors to explore his territory.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Project 4: Mark It</title>
+        <script src="project4.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="project4.css" />
+    </head>
+    
+    <body onload="drawBoard()" onkeydown="move(event)">
+        <div id="scoreCard">
+            <h1>Score:</h1>
+            <span id="score">00000</span><br />
+            <p><button id="newGame" onclick="play();"> New Game </button></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+/*
+ * Mordechai Sadowsky
+ * 
+ * This is the CSS file for my Projectpa.
+*/
+
+#board {
+    border: solid;
+    border-collapse: collapse;
+}
+
+#scoreCard {
+    position: absolute;
+    left: 650px;
+    top: 250px;
+    font-family: verdana;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 130%;
+}
+
+#board td {
+    height: 50px;
+    width: 50px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 45px;
+    width: 45px;
+}
