@@ -276,7 +276,7 @@ function endGame(message) {
     alert(message);
     
     var previousBest = parseInt(getCookie("Highscore"));
-    if (score > previousBest || previousBest != true) {
+    if (score > previousBest || !previousBest) {
         document.getElementById("highscore").innerHTML = score;
         alert("New Highscore!");
         setCookie("Highscore", score);
