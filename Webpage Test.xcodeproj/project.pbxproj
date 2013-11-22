@@ -6,10 +6,39 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		85DA29DA183F073500B80C65 /* BobaFett.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BobaFett.jpg; sourceTree = "<group>"; };
+		85DA29DB183F073500B80C65 /* BountyHunter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BountyHunter.jpg; sourceTree = "<group>"; };
+		85DA29DC183F073500B80C65 /* CookieLibrary.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = CookieLibrary.js; sourceTree = "<group>"; };
+		85DA29DD183F073500B80C65 /* Dead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dead.png; sourceTree = "<group>"; };
+		85DA29DE183F073500B80C65 /* Fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fire.png; sourceTree = "<group>"; };
+		85DA29DF183F073500B80C65 /* HanSolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HanSolo.png; sourceTree = "<group>"; };
+		85DA29E0183F073500B80C65 /* JangoFett.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JangoFett.png; sourceTree = "<group>"; };
+		85DA29E1183F073500B80C65 /* project4.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = project4.css; sourceTree = "<group>"; };
+		85DA29E2183F073500B80C65 /* Project4.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Project4.html; sourceTree = "<group>"; };
+		85DA29E3183F073500B80C65 /* project4.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = project4.js; sourceTree = "<group>"; };
+		85DA29E4183F073500B80C65 /* Stormtrooper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stormtrooper.jpg; sourceTree = "<group>"; };
+		85DA29E5183F073500B80C65 /* TuskenRaider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TuskenRaider.jpg; sourceTree = "<group>"; };
+		85DA29E6183F073500B80C65 /* Vader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vader.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		85DA29C6183F022200B80C65 = {
 			isa = PBXGroup;
 			children = (
+				85DA29DA183F073500B80C65 /* BobaFett.jpg */,
+				85DA29DB183F073500B80C65 /* BountyHunter.jpg */,
+				85DA29DC183F073500B80C65 /* CookieLibrary.js */,
+				85DA29DD183F073500B80C65 /* Dead.png */,
+				85DA29DE183F073500B80C65 /* Fire.png */,
+				85DA29DF183F073500B80C65 /* HanSolo.png */,
+				85DA29E0183F073500B80C65 /* JangoFett.png */,
+				85DA29E1183F073500B80C65 /* project4.css */,
+				85DA29E2183F073500B80C65 /* Project4.html */,
+				85DA29E3183F073500B80C65 /* project4.js */,
+				85DA29E4183F073500B80C65 /* Stormtrooper.jpg */,
+				85DA29E5183F073500B80C65 /* TuskenRaider.jpg */,
+				85DA29E6183F073500B80C65 /* Vader.jpg */,
 			);
 			sourceTree = "<group>";
 		};
